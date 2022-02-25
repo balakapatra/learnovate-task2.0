@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Display iframes</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+            background-position: center;
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            color: brown;
+        }
+
+        h2 {
+            text-align: center;
+            color: orangered;
+        }
+
+        .row {
+            margin-left: 150px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.75);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        .modal-content {
+            background-color: lightgrey;
+            border: 2px solid gray;
+        }
+
+        .modal-body {
+            background-color: cornsilk;
+        }
+
+        img:hover {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            transition: transform 0.5s;
+        }
+
+        hr.new {
+            border: 3px solid green;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/1600x900/?ocean');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <h1> APPLICATION FROM </h1>
+    <div class="container ">
+        <h2>APPLY NOW </h2>
+        <Center>
+            <form>
+                <h3 style="color: #2a0bd3"> <label for="fname">Enter your name:</label></h3>
+                <input type="text"><br> <br>
+                <h3 style="color: #2a0bd3"><label for="email">Enter your email id:</label></h3>
+                <input type="text"><br> <br>
+                <h3 style="color: #2a0bd3"><label for="number">Enter your contact number:</label></h3>
+                <input type="text"><br> <br>
+                <h3 style="color: #2a0bd3"><label for="address">enter your address:</label></h3><br>
+                <textarea name="address" id="address" cols="30" rows="2"></textarea><br>
+                <h3 style="color: #2a0bd3"></h3><label for="state">Select your State:</label></h3><br>
+                <select multiple>
+                    <option selected disabled>--Select State--</option>
+                    <optgroup>
+                        <option>New Delhi</option>
+                        <option>Kolkata</option>
+                        <option>Mumbai</option>
+                        <option>Chennai</option>
+                        <option>Noida</option>
+                        <option>Gurgram</option>
+                        <option>Faridabad</option>
+                        <option>Gaziabad</option>
+
+
+                    </optgroup>
+                </select><br> <br>
+                <h3 style="color: #2a0bd3"><label for="resume">Upload your Resume:</label></h3>
+                <input type="file" id="resume"><br> <br>
+                <h3 style="color: #2a0bd3"><label for="password">Enter yor password</label></h3>
+                <input type="password" id="pwd"><br> <br>
+                <h2 style="color:#2a0bd3">Select your gender:-</h2>
+                <br>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="others">
+                <label for="others">Others</label>
+                </br>
+                <h2 style="color: #2a0bd3">Are you an Indian citizen:-</h2>
+                <!-- Radio buttons help you choose one out of the many values -->
+                <input type="radio" name="exe" value=1>Yes
+                <input type="radio" name="exe" value=2>No
+                <h2 style="color: #2a0bd3">If no, ten are you allowed to work in India:-</h2>
+                <!-- Radio buttons help you choose one out of the many values -->
+                <input type="radio" name="exe" value=1>Yes
+                <input type="radio" name="exe" value=2>No
+
+                <h2 style="color: #2a0bd3">Are you able to start your job Immediately:-</h2>
+                <!-- Radio buttons help you choose one out of the many values -->
+                <input type="radio" name="exe" value=1>Yes
+                <input type="radio" name="exe" value=2>No
+
+
+                <h2 style="color:#2a0bd3;">Job vacancies:-</h2>
+                <p>
+                    <!--Checkbox lets you select multiple options -->
+                    <input type="checkbox" name="Books"> Web Devlopment
+                    <input type="checkbox" name="Web"> Finance
+                    <input type="checkbox" name="Phone"> Human Resource
+                    <input type="checkbox" name="Magazines"> Marketing and Sales
+                    <input type="checkbox" name="design">Graphic design
+                </p>
+                <h2 style="color: #2a0bd3;">Employement desired:-</h2>
+                <p>
+                    <!--Checkbox lets you select multiple options -->
+                    <input type="checkbox" name="employement"> Part-time
+                    <input type="checkbox" name="employement"> Full-time
+                    <input type="checkbox" name="employement"> Seasonal
+
+                </p>
+                <h2 style="color:#2a0bd3">What is your current designation?</h2>
+
+                <!--Select box lets you choose one of the multiple dropdown options-->
+                <select name="moviepref">
+                    <option>
+                    <option value=1 selected="true"> Student
+                    <option value=2> Working Professional
+                    <option value=3> Freshers
+
+                </select>
+                </br></br>
+                <!--submits the information entered in the form by the user -->
+                <input type="submit" value="SUBMIT" onclick="msg()">
+                <script>
+                    function msg() {
+                        alert("From Submited Sucessfully");
+                    }
+                </script>
+
+
+
+
+            </form>
+
+
+
+
+
+
+        </Center>
+    </div>
+
+</body>
+
+</html>

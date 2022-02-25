@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(201 201 141);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            min-height: 1000px;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            border-style: ridge;
+            border-width: 10px;
+        }
+
+        .container .left-side {
+            position: relative;
+            background-color: rgb(92 53 29 / 91%);
+            padding: 40px;
+        }
+
+        .profileText {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid black;
+
+        }
+
+        .profileText .imgbx {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profileText .imgbx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profileText h2 {
+            color: #fff;
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+
+        .contactInfo {
+            padding: 40px 20px;
+            border-bottom: 2px solid black;
+
+        }
+
+        .title {
+            color: white;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .contactInfo ul {
+            position: relative;
+        }
+
+        .contactInfo ul li {
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .contactInfo ul li .icon {
+            display: inline-block;
+            width: 30px;
+            font-size: 18px;
+            color: #eb8e06;
+        }
+
+        .contactInfo ul li span {
+            color: beige;
+        }
+
+        .contactInfo.skills .percent {
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background-color: black;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .contactInfo.skills .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: beige;
+        }
+
+        .container .right-side {
+            position: relative;
+            background-color: #cfcf63;
+            padding: 40px;
+        }
+
+        .about {
+            margin-bottom: 50px;
+
+        }
+
+        .title2 {
+            color: rgb(92 53 29 / 91%);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+
+        .about ul {
+            position: relative;
+
+        }
+
+        .about ul li {
+            position: relative;
+            font-size: 20px;
+            margin: 10px 0;
+
+
+        }
+
+        .about ul li .icon {
+            color: #eb8e06;
+        }
+
+
+        .about .year_company {
+            position: relative;
+            font-size: 18px;
+            margin: 10px 0;
+
+        }
+
+        .about .year_company p {
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="profileText">
+                <div class="imgbx">
+                    <img src="img.jpg" width="200" height="200" alt="">
+                </div>
+                <h2>Balaka Patra</h2>
+            </div>
+            <div class="contactInfo">
+                <h2 class="title">Contact info</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">+91-8967768580</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text">balaka5454@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Haldia,West Bengal,India</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="contactInfo skills">
+                <h2 class="title">skills</h2>
+                <ul>
+                    <li>
+                        <span class="text">HTML :70%</span>
+                        <span class="percent">
+                            <div style="width: 70%"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">CSS :60%</span>
+                        <span class="percent">
+                            <div style="width: 60%"> </div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">JS :55%</span>
+                        <span class="percent">
+                            <div style="width: 55%"></div>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="text">C :72%</span>
+                        <span class="percent">
+                            <div style="width: 72%"></div>
+                        </span>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="contactInfo social">
+                <h2 class="title">SOCIAL MEDIA</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                        <span class="text">Balaka@intsagram.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text">Balaka@linken.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+                        <span class="text">8967768580</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="right-side">
+            <div class="about">
+                <h2 class="title2"><i class="fa fa-user" aria-hidden="true"></i> profile</h2>
+                <ul>
+                    <li>An entusiastic fresher with highly motivated and team play skills having bachelor of technology
+                        degree in Electronics and communication.</li>
+                    <li>Eger to learn new technolodies and methodologies.</li>
+                    <li>Always willing to innovate the new things which can improve the exsisting technology.</li>
+                </ul>
+
+                <div class="about">
+                </div>
+                <h2 class="title2"><i class="fa fa-laptop" aria-hidden="true"></i>experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h4>WEB DEVELOPER</h4>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                <span class="text">2022(FEBRUARY) - PRESENT</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-building" aria-hidden="true"></i></span>
+                                <span class="text">Learnovate E-commerce</span>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="about">
+                <h2 class="title2"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h4>BACHELOOR OF TECHNOLOGY</h4>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                <span class="text">2020 - 2024</span>
+
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                                <span class="text">Haldia Institute of Technology</span>
+
+                            </li>
+                        </ul>
+                        <h4>SECONDARY & HIGHER SECONDARY</h4>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                <span class="text">2018 - 2020</span>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-university" aria-hidden="true"></i></span>
+                                <span class="text">POURA PATHABHABAN</span>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="about">
+                <h2 class="title2"><i class="fa fa-puzzle-piece" aria-hidden="true"></i>hobby</h2>
+                <ul>
+                    <li><i class="fa fa-headphones" aria-hidden="true" style="color: #eb8e06"></i>music</li>
+
+                    <li><i class="fa fa-television" aria-hidden="true" style="color: #eb8e06"></i>movies</li>
+
+                    <li><i class="fa fa-book" aria-hidden="true" style="color: #eb8e06"></i>reading</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
